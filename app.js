@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const { readFile } = require('fs');
 const { join } = require('path');
+const port = process.env.PORT || 4000;
 
 // Import routers
 const hostRouter = require('./routes/host');
@@ -37,6 +38,6 @@ app.use((req, res) => {
 });
 
 // Start the server
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server is running on http://localhost:3000');
 });

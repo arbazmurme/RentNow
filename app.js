@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const { readFile } = require('fs');
 const { join } = require('path');
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 
 // Import routers
 const hostRouter = require('./routes/host');
@@ -27,7 +27,7 @@ app.set('view engine', 'ejs');
 
 // 404 Middleware
 app.use((req, res) => {
-    readFile(join(__dirname, 'views', '404.html'), (err, data) => {
+    readFile(join(__dirname, 'views', '404.ejs'), (err, data) => {
         if (err) {
             console.error(err);
             res.status(500).send('Internal Server Error');

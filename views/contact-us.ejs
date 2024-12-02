@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/output.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <%- include('navbar') %>
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">
+        <h1 class="text-2xl font-bold text-gray-800 mb-6 text-center">Contact Us</h1>
+
+        <form action="/submit-form" method="POST" class="space-y-6">
+            <div>
+                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name:</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address:</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+                <label for="message" class="block text-gray-700 font-medium mb-2">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-500 transition">
+                    Send Message
+                </button>
+            </div>
+        </form>
+    </div>
+    <%- include('footer') %>
+</body>
+</html>

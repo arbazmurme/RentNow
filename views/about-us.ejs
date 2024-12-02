@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/output.css">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <%- include('navbar') %>
+    <!-- About Section -->
+    <div class="container mx-auto px-6 py-16">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h1 class="text-3xl font-bold text-gray-800 text-center mb-6">About RentNow</h1>
+            <p class="text-xl text-gray-600 leading-relaxed">
+                RentNow is an online platform that connects people looking to rent homes with property owners. We aim to make renting easy, secure, and efficient for both renters and hosts. Whether you're searching for a new place to stay or looking to list your property, RentNow offers a seamless experience with top-notch features and a user-friendly interface.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Our Mission</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Our mission is to simplify the rental process by providing a reliable and transparent platform. We strive to connect tenants and landlords in a way that ensures a smooth, hassle-free experience for both parties.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Why Choose Us?</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-600">
+                <li>Easy-to-use platform for renters and property owners</li>
+                <li>Secure payment options</li>
+                <li>Wide range of rental properties across various locations</li>
+                <li>24/7 customer support for both renters and hosts</li>
+            </ul>
+        </div>
+    </div>
+    <%- include('footer') %>
+</body>
+</html>

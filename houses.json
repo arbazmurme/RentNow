@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Modern Villa",
+    "address": "123 Maple Street, Beverly Hills, CA",
+    "price": "5000"
+  },
+  {
+    "name": "Cozy Apartment",
+    "address": "456 Elm Street, New York, NY",
+    "price": "2500"
+  },
+  {
+    "name": "Beachside Cottage",
+    "address": "789 Ocean Drive, Miami, FL",
+    "price": "4000"
+  }
+]

@@ -1,27 +1,9 @@
 [
   {
-    "name": "Modern Villa",
-    "address": "123 Maple Street, Beverly Hills, CA",
-    "price": "5000"
-  },
-  {
-    "name": "Cozy Apartment",
-    "address": "456 Elm Street, New York, NY",
-    "price": "2500"
-  },
-  {
-    "name": "Beachside Cottage",
-    "address": "789 Ocean Drive, Miami, FL",
-    "price": "4000"
-  },
-  {
-    "name": "Arbaj haidar murme",
-    "address": "Mulegaon Rd, Saruwadi Nagar, Rangraj Nagar, Solapur, Maharashtra 413005",
-    "price": "84529856522323"
-  },
-  {
-    "name": "94664",
-    "address": "94631",
-    "price": "4613"
+    "id": "house-1733133291256",
+    "name": "Arbaz",
+    "address": "2asasxasasasas",
+    "price": "121212",
+    "image": "/uploads/1733133291251-Screenshot from 2024-11-28 18-07-54.png"
   }
 ]

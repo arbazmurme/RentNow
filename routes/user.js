@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
        const fileData = fs.readFileSync(filePath, 'utf-8');
        houses = fileData ? JSON.parse(fileData) : [];
    }
-   
    // Render the index page with the houses
    res.render('index', { title: 'RentNow - Find Your Perfect Home', active: 'home', houses });
 });

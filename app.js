@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const { readFile } = require('fs');
 const { join } = require('path');
+const path = require('path'); 
 const port = process.env.PORT || 3000;
-
 // Import routers
 const hostRouter = require('./routes/host');
 const userRouter = require('./routes/user');
@@ -18,6 +18,7 @@ app.use(contactRouter);
 
 // Serve static files
 app.use(express.static(join(__dirname, 'views')));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Set 'views' directory for EJS
 app.set('views', join(__dirname, 'views'));

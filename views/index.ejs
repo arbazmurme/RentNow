@@ -46,8 +46,20 @@
                             Address: <%= house.address %>
                         </p>
                         <p class="mt-1 text-sm text-gray-600">
-                            Price: $<%= house.price %> / month
+                            Price: ₹<%= house.price %> / month
                         </p>
+                    </div>
+                    <div class="flex justify-between">
+                        <a href="/house/<%= house.id %>" 
+                           class="px-4 py-2 w-full bg-blue-600 text-center text-white hover:bg-blue-500"
+                           aria-label="View details of the house">
+                            View Details
+                        </a>
+                        <a href="/house/<%= house.id %>/book" 
+                           class="px-4 py-2 w-full bg-blue-700 text-center text-white hover:bg-blue-500"
+                           aria-label="Book the house now">
+                            Book Now
+                        </a>
                     </div>
                 </div>
             <% }) %>

@@ -9,6 +9,11 @@ const hostRouter = require('./routes/host');
 const userRouter = require('./routes/user');
 const aboutRouter = require('./routes/about');
 const contactRouter = require('./routes/contact');
+const Swal = require('sweetalert2');
+
+// For JSON payloads
+app.use(express.json()); 
+app.use(express.urlencoded({ extended: true })); 
 
 // Mount routers at specific base paths
 app.use(hostRouter);

@@ -1,9 +1,16 @@
 [
   {
-    "id": "house-1733133291256",
-    "name": "Arbaz",
-    "address": "2asasxasasasas",
-    "price": "121212",
-    "image": "/uploads/1733133291251-Screenshot from 2024-11-28 18-07-54.png"
+    "id": "house-1733208516102",
+    "name": "Tree House",
+    "address": "Mulegaon Rd, Saruwadi Nagar, Rangraj Nagar, Solapur, Maharashtra 413005",
+    "price": "3500",
+    "image": "/uploads/1733208516098-tree-house.jpg"
+  },
+  {
+    "id": "house-1733212920655",
+    "name": "arbaz manjil",
+    "address": "Railway station, Agarkar Nagar, Pune, Maharashtra 411001",
+    "price": "1200",
+    "image": "/uploads/1733212920652-Most-Beautiful-House-in-the-World_0_1200.jpg"
   }
 ]

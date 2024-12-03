@@ -1,19 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const path = require('path');
-const fs = require('fs');
+const { getGetHome, getHouseDetails, editHouseController, editHouse, getEditHouse, postEditHouse, deleteHouse } = require('../controllers/dis_house');
 
-router.get('/', (req, res) => {
-   const filePath = path.join(__dirname, '../', 'houses.json');
-   let houses = [];
-
-   // Read the JSON file and parse it
-   if (fs.existsSync(filePath)) {
-       const fileData = fs.readFileSync(filePath, 'utf-8');
-       houses = fileData ? JSON.parse(fileData) : [];
-   }
-   // Render the index page with the houses
-   res.render('index', { title: 'RentNow - Find Your Perfect Home', active: 'home', houses });
-});
+router.get('/', getGetHome);
+router.get('/house/:id', getHouseDetails);
+router.get('/edit-house', editHouseController);
+router.get('/edit-house/:id', getEditHouse);
+router.post('/edit-house/:id', postEditHouse);
+router.get('/delete-house/:id', deleteHouse);
 
 module.exports = router;
